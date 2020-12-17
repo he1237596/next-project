@@ -1,0 +1,14 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    [
+      "import",
+      {
+        "libraryName": "antd",
+        // "style": true //不行，报错
+        // "style": "css" //不行，报错
+        "styleLibraryDirectory": "lib" // 默认
+      }
+    ]
+  ]
+}
