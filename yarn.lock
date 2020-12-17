@@ -370,7 +370,7 @@
   resolved "https://registry.npm.taobao.org/@xtuc/long/download/@xtuc/long-4.2.2.tgz#d291c6a4e97989b5c61d9acf396ae4fe133a718d"
   integrity sha1-0pHGpOl5ibXGHZrPOWrk/hM6cY0=
 
-"@zeit/next-css@1.0.1":
+"@zeit/next-css@1.0.1", "@zeit/next-css@^1.0.1":
   version "1.0.1"
   resolved "https://registry.npm.taobao.org/@zeit/next-css/download/@zeit/next-css-1.0.1.tgz#4f784e841e7ca1b21b3468a902e2c1fa95a3e75c"
   integrity sha1-T3hOhB58obIbNGipAuLB+pWj51w=
@@ -674,7 +674,7 @@ babel-code-frame@^6.26.0:
     esutils "^2.0.2"
     js-tokens "^3.0.2"
 
-babel-plugin-import@^1.13.3:
+babel-plugin-import@^1.11.0, babel-plugin-import@^1.13.3:
   version "1.13.3"
   resolved "https://registry.npm.taobao.org/babel-plugin-import/download/babel-plugin-import-1.13.3.tgz?cache=0&sync_timestamp=1606209944483&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fbabel-plugin-import%2Fdownload%2Fbabel-plugin-import-1.13.3.tgz#9dbbba7d1ac72bd412917a830d445e00941d26d7"
   integrity sha1-nbu6fRrHK9QSkXqDDUReAJQdJtc=
@@ -2675,7 +2675,7 @@ klona@^2.0.4:
   resolved "https://registry.npm.taobao.org/klona/download/klona-2.0.4.tgz?cache=0&sync_timestamp=1600226616064&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fklona%2Fdownload%2Fklona-2.0.4.tgz#7bb1e3affb0cb8624547ef7e8f6708ea2e39dfc0"
   integrity sha1-e7Hjr/sMuGJFR+9+j2cI6i4538A=
 
-less-loader@4.1.0:
+less-loader@4.1.0, less-loader@^4.1.0:
   version "4.1.0"
   resolved "https://registry.npm.taobao.org/less-loader/download/less-loader-4.1.0.tgz#2c1352c5b09a4f84101490274fd51674de41363e"
   integrity sha1-LBNSxbCaT4QQFJAnT9UWdN5BNj4=
@@ -2684,7 +2684,7 @@ less-loader@4.1.0:
     loader-utils "^1.1.0"
     pify "^3.0.0"
 
-less@^3.13.0:
+less@^3.13.0, less@^3.9.0:
   version "3.13.0"
   resolved "https://registry.npm.taobao.org/less/download/less-3.13.0.tgz?cache=0&sync_timestamp=1607751951189&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fless%2Fdownload%2Fless-3.13.0.tgz#6a47bb19d97edcf7a53d444b099275dd6b17c85a"
   integrity sha1-ake7Gdl+3PelPURLCZJ13WsXyFo=
@@ -3064,6 +3064,16 @@ neo-async@^2.5.0, neo-async@^2.6.1, neo-async@^2.6.2:
   version "2.6.2"
   resolved "https://registry.npm.taobao.org/neo-async/download/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha1-tKr7k+OustgXTKU88WOrfXMIMF8=
+
+next-antd-aza-less@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.npm.taobao.org/next-antd-aza-less/download/next-antd-aza-less-1.0.2.tgz#0eefdd93fd6a82e3757b4e9604bcdfe86060f945"
+  integrity sha1-Du/dk/1qguN1e06WBLzf6GBg+UU=
+  dependencies:
+    "@zeit/next-css" "^1.0.1"
+    babel-plugin-import "^1.11.0"
+    less "^3.9.0"
+    less-loader "^4.1.0"
 
 next-tick@~1.0.0:
   version "1.0.0"

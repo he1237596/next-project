@@ -5,9 +5,8 @@
       "import",
       {
         "libraryName": "antd",
-        // "style": true //不行，报错
-        // "style": "css" //不行，报错
-        "styleLibraryDirectory": "lib" // 默认
+        "style": true //不行，报错
+        // 只能这样配置以上两项，方能正常使用，且不能直接引入css文件,也放弃了next自带得css模块规则
       }
     ]
   ]
