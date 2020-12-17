@@ -2,12 +2,13 @@
  * @Author: Chris
  * @Date: 2020-12-18 00:23:28
  * @LastEditors: Chris
- * @LastEditTime: 2020-12-18 01:10:30
+ * @LastEditTime: 2020-12-18 02:08:54
  * @Descripttion: **
  */
 import Head from 'next/head'
 import {Button} from 'antd'
-import styles from '../styles/Home.module.css'
+// import styles from '../styles/Home.module.css'
+import styles from '../styles/base.less'
 
 export default function Home() {
   return (
