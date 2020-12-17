@@ -2,7 +2,7 @@
  * @Author: Chris
  * @Date: 2020-12-18 00:23:28
  * @LastEditors: Chris
- * @LastEditTime: 2020-12-18 00:39:13
+ * @LastEditTime: 2020-12-18 01:10:30
  * @Descripttion: **
  */
 import Head from 'next/head'
@@ -18,6 +18,10 @@ export default function Home() {
       </Head>
       <h1>Index</h1>
       <Button type='primary'>按钮</Button>
+      <Button type='primary'>按钮</Button>
+      <Button type='primary'>按钮</Button>
+      <Button type='primary'>按钮</Button>
+      <p>这是一段文字</p>
     </div>
   )
 }
