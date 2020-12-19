@@ -1,11 +1,21 @@
-/*
- * @Author: Chris
- * @Date: 2020-12-18 01:05:03
- * @LastEditors: Chris
- * @LastEditTime: 2020-12-18 01:21:23
- * @Descripttion: **
- */
-const withLess = require('@zeit/next-less')
-const withCss = require('@zeit/next-css')
+const withLessExcludeAntd = require("./next-less.config.js")
+const withCss = require("@zeit/next-css")
 
-module.exports=withLess(withCss({ cssModules: true }));
+// choose your own modifyVars
+// const modifyVars = require("./utils/modifyVars")
+
+if (typeof require !== 'undefined') {
+  require.extensions['.less'] = (file) => {}
+}
+
+module.exports = withLessExcludeAntd(withCss({
+    cssModules: true,
+    cssLoaderOptions: {
+      importLoaders: 1,
+      localIdentName: "[local]___[hash:base64:5]",
+    },
+    lessLoaderOptions: {
+      javascriptEnabled: true,
+      // modifyVars: modifyVars
+    }
+}))
