@@ -2,13 +2,13 @@
  * @Author: Chris
  * @Date: 2020-12-18 00:23:28
  * @LastEditors: Chris
- * @LastEditTime: 2020-12-18 01:46:59
+ * @LastEditTime: 2020-12-19 16:05:26
  * @Descripttion: **
  */
 import Head from 'next/head'
 import {Button, Radio, Select} from 'antd'
 import styles from '../styles/Home.less'
-
+import styles1 from '../styles/home.module.css'
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -26,7 +26,7 @@ export default function Home() {
         <Select.Option value={1}>呵呵呵</Select.Option>
         <Select.Option value={2}>哈哈哈哈</Select.Option>
       </Select>
-      <p>这是一段文字</p>
+      <p className={styles1.test}>这是一段文字</p>
     </div>
   )
 }

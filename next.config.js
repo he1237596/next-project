@@ -2,19 +2,20 @@
  * @Author: Chris
  * @Date: 2020-12-18 01:05:03
  * @LastEditors: Chris
- * @LastEditTime: 2020-12-18 01:26:38
+ * @LastEditTime: 2020-12-19 16:03:04
  * @Descripttion: **
  */
 
 const antdLessLoader = require("next-antd-aza-less")
-// const modifyVars = require("./your/custom/vars")
+const withCss = require("@zeit/next-css")
+// const modifyVars = reuire("./your/custom/vars")
 
 if (typeof require !== 'undefined') {
   require.extensions['.less'] = (file) => {}
 }
 
 /* Without CSS Modules, with PostCSS */
-module.exports = antdLessLoader({
+module.exports = antdLessLoader(withCss({
     cssModules: true,
     cssLoaderOptions: {
       importLoaders: 1,
@@ -24,4 +25,4 @@ module.exports = antdLessLoader({
       javascriptEnabled: true,
       // modifyVars: modifyVars
     }
-});
+}));
